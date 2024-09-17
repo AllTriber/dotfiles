@@ -43,3 +43,11 @@ map("x", "J", ":m '>+1<CR>gv=gv", merge_opts())
 map("x", "K", ":m '<-2<CR>gv=gv", merge_opts())
 map("x", "<A-j>", ":m '>+1<CR>gv=gv", merge_opts())
 map("x", "<A-k>", ":m '<-2<CR>gv=gv", merge_opts())
+
+-- Key mappings for vim-fugitive with descriptions
+map("n", "<leader>gs", ":Git<CR>", merge_opts { desc = "Open Git status" })
+map("n", "<leader>gb", ":Git blame<CR>", merge_opts { desc = "Blame current line" })
+map("n", "<leader>gd", ":Git diffsplit<CR>", merge_opts { desc = "Git diff split" })
+map("n", "<leader>gw", ":Git write<CR>", merge_opts { desc = "Stage the current file" })
+map("n", "<leader>gc", ":Git commit<CR>", merge_opts { desc = "Commit changes" })
+map("n", "<leader>gp", ":Git push<CR>", merge_opts { desc = "Push changes to remote" })
