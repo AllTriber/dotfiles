@@ -66,7 +66,6 @@ return {
       require("nvim-dap-virtual-text").setup()
     end,
   },
-  --
   -- Gitsigns configuration
   {
     "lewis6991/gitsigns.nvim",
@@ -75,13 +74,16 @@ return {
       require("plugins.configs.gitsigns").setup()
     end,
   },
-
   -- Fugitive setup with lazy loading
   {
     "tpope/vim-fugitive",
-    cmd = { "Git", "Gread", "Gwrite", "Gdiffsplit", "Gblame", "Gstatus", "Gcommit" }, -- Load on these commands
-    config = function()
-      -- Optional: any extra configuration for fugitive
-    end,
+    cmd = { "Git", "Gread", "Gwrite", "Gdiffsplit", "Gblame", "Gstatus", "Gcommit" },
+    config = function() end,
   },
+  -- Hop
+  "hadronized/hop.nvim",
+  branch = "v2",
+  config = function()
+    require("hop").setup {}
+  end,
 }
