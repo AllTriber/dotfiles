@@ -44,7 +44,7 @@ map("x", "K", ":m '<-2<CR>gv=gv", merge_opts())
 map("x", "<A-j>", ":m '>+1<CR>gv=gv", merge_opts())
 map("x", "<A-k>", ":m '<-2<CR>gv=gv", merge_opts())
 
--- Key mappings for vim-fugitive with correct commands based on tpope's documentation
+-- vim-fugitive
 map("n", "<leader>gs", ":Git<CR>", merge_opts { desc = "Open Git summary/status" })
 map("n", "<leader>gb", ":Git blame<CR>", merge_opts { desc = "Blame current line" })
 map("n", "<leader>gd", ":Gdiffsplit<CR>", merge_opts { desc = "Git diff split" })
